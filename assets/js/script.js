@@ -1,3 +1,5 @@
+//5.1.6
+
 var tasks = {};
 
 var createTask = function(taskText, taskDate, taskList) {
@@ -33,7 +35,6 @@ var loadTasks = function() {
 
   // loop over object properties
   $.each(tasks, function(list, arr) {
-    console.log(list, arr);
     // then loop over sub-array
     arr.forEach(function(task) {
       createTask(task.text, task.date, list);
